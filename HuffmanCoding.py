@@ -1,6 +1,6 @@
 # Huffman Coding in python
 
-string = 'BCAADDDCCACACACfnfyfjmytj'
+string = 'this is the test file for project 2: hoffman coding'
 
 # Creating tree nodes
 class NodeTree(object):

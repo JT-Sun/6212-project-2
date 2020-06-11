@@ -1,6 +1,8 @@
 # Huffman Coding in python
 
 string = 'this is the test file for project 2: hoffman coding'
+print("Input string:", "\"", string, "\"")
+
 
 # Creating tree nodes
 class NodeTree(object):
@@ -11,10 +13,6 @@ class NodeTree(object):
 
     def nodes(self):
         return (self.left, self.right)
-
-    # def __str__(self):
-    #     return '%s_%s' % (self.left, self.right)
-
 
 # Main function implementing huffman coding
 def huffman_code_tree(node, left=True, binString=''):
@@ -52,7 +50,6 @@ while len(nodes) > 1:
 
 huffmanCode = huffman_code_tree(nodes[0][0])
 
-####
 bit_dict = {}
 for char in huffmanCode:
 
@@ -61,11 +58,11 @@ xx = []
 for i in bit_dict:
     xx.append(bit_dict[i])
 a = sum(xx)
-print('total bits of huffman coding =',a)
+# print('total bits of huffman coding =',a)
 
-####
 
-print(' Char   |   Huffman code   |   bits')
+print(' Char |   Huffman code   |  bits')
 print('---------------------------------')
 for (char, frequency) in freq:
     print(' %-4r |%12s|%12s' % (char, huffmanCode[char], bit_dict[char]))
+print('total bits of huffman coding =',a)

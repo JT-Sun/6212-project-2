@@ -1,5 +1,6 @@
 # Huffman Coding in python
 import time
+from math import log
 import matplotlib.pyplot as plot
 from matplotlib.pyplot import MultipleLocator
 
